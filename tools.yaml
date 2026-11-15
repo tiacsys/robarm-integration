@@ -1,0 +1,5 @@
+# Tools that robarm-integration needs on top of xdmod/tools.yaml (D19).
+# Format: xdmod/curatrix/README.md ("tools.yaml"). Nothing yet: the firmware toolchain is pinned
+# in robarm-sw/tools.yaml, and the HIL tools come with the first HIL setup.
+tools: []
+system: []

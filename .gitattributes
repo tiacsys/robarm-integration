@@ -1,0 +1,4 @@
+# Line endings, diff drivers and GitHub hints (repo-layouts.md §1).
+* text=auto eol=lf
+*.yaml text eol=lf
+*.py text eol=lf

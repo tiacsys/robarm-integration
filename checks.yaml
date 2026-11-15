@@ -1,0 +1,13 @@
+# What `curatrix check robarm-integration` runs (format: xdmod/curatrix/README.md, "checks.yaml").
+version: 1
+area: robarm-integration
+
+docs:                                   # CK-A6 strict docs build (own docs + every upstream doc)
+  registry: docs/documents.yaml
+
+ids:                                    # CK-C1, CK-C2
+  ledger: ids.yaml
+  exclude: ["*.md", "claude/**", ".github/**"]
+
+# System and integration test runs (Twister, HIL) are added as `commands` once the first test
+# case exists. HIL run records live on the orphan branch `evidence` (D73), created by a later task.
