@@ -1,0 +1,85 @@
+# zdocs registry of robarm-integration (doc-architecture.md §3).
+# It lists this repo's own documents first, then the upstream documents. Upstream documents are
+# built locally from their west checkouts (doc_dir), so that links into upstream needs resolve
+# in this build (D35). Indirect upstream documents are listed by hand until zdocs #26/#27 land.
+# Format: tools/zdocs/doc/manual/reference/registry-schema.rst.
+# base_url is only used for links outside the HTML tree (PDFs, iteration 2).
+base_url: "https://tiacsys.github.io/robarm-manifest/"
+
+groups:
+  - id: g-int
+    title: "Integration"
+  - id: g-sys
+    title: "System"
+  - id: g-sw
+    title: "Software"
+  - id: g-ee
+    title: "Electrical"
+  - id: g-me
+    title: "Mechanical"
+
+documents:
+  # own documents
+  int-test-spec:
+    title: "System and Integration Test Specification"
+    group: g-int
+    version_project: robarm-integration
+    builders: [html]
+    needs: {source: json}
+  int-test-report:
+    title: "System and Integration Test Report"
+    group: g-int
+    version_project: robarm-integration
+    builders: [html]
+    needs: {source: json}
+
+  # upstream documents (built locally from the sibling west projects, D35)
+  se-req:
+    title: "Stakeholder and System Requirements Specification"
+    group: g-sys
+    doc_dir: ../../robarm-syseng/docs/se-req
+    version_project: robarm-syseng
+    builders: [html]
+    needs: {source: json}
+  se-arch:
+    title: "System Architecture"
+    group: g-sys
+    doc_dir: ../../robarm-syseng/docs/se-arch
+    version_project: robarm-syseng
+    builders: [html]
+    needs: {source: json}
+  sw-req:
+    title: "SW Requirements Specification"
+    group: g-sw
+    doc_dir: ../../robarm-sw/docs/sw-req
+    version_project: robarm-sw
+    builders: [html]
+    needs: {source: json}
+  sw-arch:
+    title: "SW Architecture and Design"
+    group: g-sw
+    doc_dir: ../../robarm-sw/docs/sw-arch
+    version_project: robarm-sw
+    builders: [html]
+    needs: {source: json}
+  sw-test-spec:
+    title: "SW Test Specification"
+    group: g-sw
+    doc_dir: ../../robarm-sw/docs/sw-test-spec
+    version_project: robarm-sw
+    builders: [html]
+    needs: {source: json}
+  ee-design:
+    title: "EE Requirements and Design"
+    group: g-ee
+    doc_dir: ../../robarm-ee/docs/ee-design
+    version_project: robarm-ee
+    builders: [html]
+    needs: {source: json}
+  me-design:
+    title: "ME Requirements and Design"
+    group: g-me
+    doc_dir: ../../robarm-me/docs/me-design
+    version_project: robarm-me
+    builders: [html]
+    needs: {source: json}
