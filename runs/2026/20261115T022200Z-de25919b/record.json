@@ -1,0 +1,142 @@
+{
+  "config": "SYS-CFG-0001",
+  "created": "2026-11-15T02:22:00Z",
+  "evidence": {
+    "base": "main",
+    "ok": false,
+    "problems": [
+      "robarm-manifest: tree not clean",
+      "robarm-manifest: b129534a250d is not on main or a baseline tag",
+      "xdmod: tree not clean"
+    ]
+  },
+  "firmware": {
+    "file": "native_sim_native/host_gnu/robarm-sw/tests/smoke/robarm.smoke/zephyr/zephyr.exe",
+    "sha256": "61fa34585fe76924d950bf7621f6973e472ca05252d908eada682b0d337a7ed3"
+  },
+  "kind": "sim",
+  "note": "TOOLING TEST, NOT EVIDENCE: native_sim smoke test (no HIL, untraced), recorded while xdmod was on feat/evidence and the manifest on a PR branch (tiacsys/xdmod task 4.6).",
+  "platform": "native_sim/native",
+  "recorded_by": "Tobias Kaestner",
+  "results": [
+    {
+      "duration": 0.01,
+      "status": "passed",
+      "suite": "robarm.smoke",
+      "test": "robarm.smoke.robarm_smoke.runs",
+      "test_case": null
+    }
+  ],
+  "run_id": "20261115T022200Z-de25919b",
+  "schema": "xdmod-run-record/1",
+  "setup": null,
+  "tool": {
+    "files": {
+      "twister.json": "90680115a4b64374d7b6b0325e2bc63541f589f77b075c1a9a0b673d44841372",
+      "twister_report.xml": "14760084c9200f1aa1ad4f1ebad1d5a732da30f3784da4e10977d4e8880fdbb1"
+    },
+    "name": "twister",
+    "zephyr_version": "v4.4.2"
+  },
+  "workspace": {
+    "manifest": {
+      "clean": false,
+      "on": null,
+      "pin": "b129534a250dc7efe1a5e8ce0d819c0fa682ce0f",
+      "sha": "b129534a250dc7efe1a5e8ce0d819c0fa682ce0f"
+    },
+    "repos": {
+      "PLEML": {
+        "clean": true,
+        "pin": "b694648cce4b96126eda2de3eb881c54397ae035",
+        "sha": "b694648cce4b96126eda2de3eb881c54397ae035"
+      },
+      "affirmatrix": {
+        "clean": true,
+        "pin": "fb3f4dcd8439c1566b6a69d3e5e6ca7fb8fb61ab",
+        "sha": "fb3f4dcd8439c1566b6a69d3e5e6ca7fb8fb61ab"
+      },
+      "cmsis_6": {
+        "clean": true,
+        "pin": "30a859f44ef8ab4dc8f84b03ed586fd16ccf9d74",
+        "sha": "30a859f44ef8ab4dc8f84b03ed586fd16ccf9d74"
+      },
+      "hal_stm32": {
+        "clean": true,
+        "pin": "fc11896dd39cfca37bf9b4aeaaa2df8861b81875",
+        "sha": "fc11896dd39cfca37bf9b4aeaaa2df8861b81875"
+      },
+      "kicad-footprints": {
+        "clean": true,
+        "pin": "a0dcd398e7ea4b00cdeb91efc35f09cceaa9097d",
+        "sha": "a0dcd398e7ea4b00cdeb91efc35f09cceaa9097d"
+      },
+      "kicad-library-utils": {
+        "clean": true,
+        "pin": "90b0af91eaffcd91552027c3bfd166896f78c7de",
+        "sha": "90b0af91eaffcd91552027c3bfd166896f78c7de"
+      },
+      "kicad-symbols": {
+        "clean": true,
+        "pin": "9fa442824ffd3786b0c420b5d7e45f9a461b7c72",
+        "sha": "9fa442824ffd3786b0c420b5d7e45f9a461b7c72"
+      },
+      "kicad-templates": {
+        "clean": true,
+        "pin": "3ed4538b0f965d821df63a5fffc4441e723cfe7f",
+        "sha": "3ed4538b0f965d821df63a5fffc4441e723cfe7f"
+      },
+      "robarm-ee": {
+        "clean": true,
+        "on": "main",
+        "pin": "ad148d0af0b1a8cfc6ef070d46e2253a3b9b8095",
+        "sha": "ad148d0af0b1a8cfc6ef070d46e2253a3b9b8095"
+      },
+      "robarm-integration": {
+        "clean": true,
+        "on": "main",
+        "pin": "0e93477cb15ef00c8ca4f2566fa81467a8ab0211",
+        "sha": "0e93477cb15ef00c8ca4f2566fa81467a8ab0211"
+      },
+      "robarm-me": {
+        "clean": true,
+        "on": "main",
+        "pin": "2daa9ff7aad194dc3238ffdf58b247d7759b17c7",
+        "sha": "2daa9ff7aad194dc3238ffdf58b247d7759b17c7"
+      },
+      "robarm-sw": {
+        "clean": true,
+        "on": "main",
+        "pin": "881b87659510324d35bccac4aa53701a84ea127f",
+        "sha": "881b87659510324d35bccac4aa53701a84ea127f"
+      },
+      "robarm-syseng": {
+        "clean": true,
+        "on": "main",
+        "pin": "0e72561d8a8be242554c4c9cad2127a3b6f68194",
+        "sha": "0e72561d8a8be242554c4c9cad2127a3b6f68194"
+      },
+      "sysmod-sysmlv2": {
+        "clean": true,
+        "pin": "621454a0df9e6c84824176eecb503ce53ee379c9",
+        "sha": "621454a0df9e6c84824176eecb503ce53ee379c9"
+      },
+      "xdmod": {
+        "clean": false,
+        "on": "main",
+        "pin": "0f7dc6a8cd348c0cf6be3e2218fc6a3754d8b9b8",
+        "sha": "0f7dc6a8cd348c0cf6be3e2218fc6a3754d8b9b8"
+      },
+      "zdocs": {
+        "clean": true,
+        "pin": "c66f43641d28181ae0046a525bfbfa4d6b1fea3e",
+        "sha": "c66f43641d28181ae0046a525bfbfa4d6b1fea3e"
+      },
+      "zephyr": {
+        "clean": true,
+        "pin": "dccb09599635bdff17633fa7e9dab014b91dce90",
+        "sha": "dccb09599635bdff17633fa7e9dab014b91dce90"
+      }
+    }
+  }
+}
