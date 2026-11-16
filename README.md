@@ -5,7 +5,7 @@ the right side of the V-model at system level, the hardware-in-the-loop (HIL) se
 test documents.
 
 Status: **skeleton** (Phase 4). The structure, the checks and empty documents are in place; the
-content comes in Phase 5.
+content comes in Phase 6.
 
 ## Layout
 
